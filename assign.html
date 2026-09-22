@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Paul Shaji</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #111;
+      color: #eee;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #1a1a1a;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 {
+      font-size: 1.4rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #eee;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #4dd0e1;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    section h2 {
+      margin-bottom: 15px;
+      color: #4dd0e1;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 15px;
+      border: 2px solid #4dd0e1;
+    }
+
+    form div {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 0.9rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      color: #eee;
+      border-radius: 4px;
+    }
+
+    input:focus, textarea:focus {
+      outline: 2px solid #4dd0e1;
+    }
+
+    button {
+      background-color: #4dd0e1;
+      color: #111;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #3ab6c7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border-top: 1px solid #333;
+      font-size: 0.85rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>John Paul Shaji</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <img
+        class="profile-pic"
+        src="https://mulearn.org/muback-media/user/profile/2ad45bb9-690b-4914-b8f3-a523684e3e20.png?v=1790097078902">
+      <p>
+        Hi, I'm John Paul Shaji, a first-year Computer Science student
+        learning the basics of web development one project at a time.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form aria-label="Contact form">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&mu;ID: johnpaulshaji@mulearn</p>
+  </footer>
+
+</body>
+</html>
